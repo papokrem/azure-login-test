@@ -5,9 +5,8 @@ from anvil.tables import app_tables
 import anvil.users
 from anvil import alert
 
-anvil.microsoft.auth.login()
-if anvil.microsoft.auth.get_user_email():
-  alert(f"User logged in: {anvil.microsoft.auth.get_user_email()}")
+if anvil.users.login_with_microsoft():
+  alert(f"User logged in: {anvil.users.get_user()}")
 else:
   alert("Not logged in...")
 

@@ -25,7 +25,7 @@ db_schema:
       type: bool
     title: Users
 startup: {type: module, module: Module1}
-name: azure login test
+name: azure_login_test
 startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 services:
